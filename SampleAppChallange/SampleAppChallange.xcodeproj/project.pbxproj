@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4C1408C22E148ED7005EF4F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408BF2E148ED6005EF4F6 /* ContentView.swift */; };
+		4C1408C32E148ED7005EF4F6 /* SampleAppChallangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408C02E148ED6005EF4F6 /* SampleAppChallangeApp.swift */; };
+		4C1408C42E148ED7005EF4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1408BE2E148ED6005EF4F6 /* Assets.xcassets */; };
+		4C1408C72E148EDA005EF4F6 /* SampleAppChallangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408C52E148EDA005EF4F6 /* SampleAppChallangeTests.swift */; };
+		4C1408CB2E148EDC005EF4F6 /* SampleAppChallangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408C82E148EDC005EF4F6 /* SampleAppChallangeUITests.swift */; };
+		4C1408CC2E148EDC005EF4F6 /* SampleAppChallangeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408C92E148EDC005EF4F6 /* SampleAppChallangeUITestsLaunchTests.swift */; };
+		4C1408CE2E148F00005EF4F6 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408CD2E148EE4005EF4F6 /* QuestionModel.swift */; };
+		4C1408D02E1490D7005EF4F6 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408CF2E1490D3005EF4F6 /* SectionModel.swift */; };
+		4C1408D22E14911D005EF4F6 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408D12E14911A005EF4F6 /* PageModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4C14089E2E148BE0005EF4F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,25 +39,16 @@
 		4C14088D2E148BDE005EF4F6 /* SampleAppChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C14089D2E148BE0005EF4F6 /* SampleAppChallangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppChallangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1408A72E148BE0005EF4F6 /* SampleAppChallangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppChallangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1408BE2E148ED6005EF4F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C1408BF2E148ED6005EF4F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C1408C02E148ED6005EF4F6 /* SampleAppChallangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppChallangeApp.swift; sourceTree = "<group>"; };
+		4C1408C52E148EDA005EF4F6 /* SampleAppChallangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppChallangeTests.swift; sourceTree = "<group>"; };
+		4C1408C82E148EDC005EF4F6 /* SampleAppChallangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppChallangeUITests.swift; sourceTree = "<group>"; };
+		4C1408C92E148EDC005EF4F6 /* SampleAppChallangeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppChallangeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C1408CD2E148EE4005EF4F6 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		4C1408CF2E1490D3005EF4F6 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		4C1408D12E14911A005EF4F6 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		4C14088F2E148BDE005EF4F6 /* SampleAppChallange */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SampleAppChallange;
-			sourceTree = "<group>";
-		};
-		4C1408A02E148BE0005EF4F6 /* SampleAppChallangeTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SampleAppChallangeTests;
-			sourceTree = "<group>";
-		};
-		4C1408AA2E148BE0005EF4F6 /* SampleAppChallangeUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SampleAppChallangeUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4C14088A2E148BDE005EF4F6 /* Frameworks */ = {
@@ -75,9 +78,9 @@
 		4C1408842E148BDE005EF4F6 = {
 			isa = PBXGroup;
 			children = (
-				4C14088F2E148BDE005EF4F6 /* SampleAppChallange */,
-				4C1408A02E148BE0005EF4F6 /* SampleAppChallangeTests */,
-				4C1408AA2E148BE0005EF4F6 /* SampleAppChallangeUITests */,
+				4C1408C12E148ED6005EF4F6 /* SampleAppChallange */,
+				4C1408C62E148EDA005EF4F6 /* SampleAppChallangeTests */,
+				4C1408CA2E148EDC005EF4F6 /* SampleAppChallangeUITests */,
 				4C14088E2E148BDE005EF4F6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +93,44 @@
 				4C1408A72E148BE0005EF4F6 /* SampleAppChallangeUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4C1408BD2E148ED6005EF4F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C1408D12E14911A005EF4F6 /* PageModel.swift */,
+				4C1408CF2E1490D3005EF4F6 /* SectionModel.swift */,
+				4C1408CD2E148EE4005EF4F6 /* QuestionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C1408C12E148ED6005EF4F6 /* SampleAppChallange */ = {
+			isa = PBXGroup;
+			children = (
+				4C1408BE2E148ED6005EF4F6 /* Assets.xcassets */,
+				4C1408BF2E148ED6005EF4F6 /* ContentView.swift */,
+				4C1408BD2E148ED6005EF4F6 /* Model */,
+				4C1408C02E148ED6005EF4F6 /* SampleAppChallangeApp.swift */,
+			);
+			path = SampleAppChallange;
+			sourceTree = "<group>";
+		};
+		4C1408C62E148EDA005EF4F6 /* SampleAppChallangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C1408C52E148EDA005EF4F6 /* SampleAppChallangeTests.swift */,
+			);
+			path = SampleAppChallangeTests;
+			sourceTree = "<group>";
+		};
+		4C1408CA2E148EDC005EF4F6 /* SampleAppChallangeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C1408C82E148EDC005EF4F6 /* SampleAppChallangeUITests.swift */,
+				4C1408C92E148EDC005EF4F6 /* SampleAppChallangeUITestsLaunchTests.swift */,
+			);
+			path = SampleAppChallangeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +147,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				4C14088F2E148BDE005EF4F6 /* SampleAppChallange */,
 			);
 			name = SampleAppChallange;
 			packageProductDependencies = (
@@ -130,9 +168,6 @@
 			dependencies = (
 				4C14089F2E148BE0005EF4F6 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				4C1408A02E148BE0005EF4F6 /* SampleAppChallangeTests */,
-			);
 			name = SampleAppChallangeTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +187,6 @@
 			);
 			dependencies = (
 				4C1408A92E148BE0005EF4F6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4C1408AA2E148BE0005EF4F6 /* SampleAppChallangeUITests */,
 			);
 			name = SampleAppChallangeUITests;
 			packageProductDependencies = (
@@ -215,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1408C42E148ED7005EF4F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1408CE2E148F00005EF4F6 /* QuestionModel.swift in Sources */,
+				4C1408D22E14911D005EF4F6 /* PageModel.swift in Sources */,
+				4C1408C22E148ED7005EF4F6 /* ContentView.swift in Sources */,
+				4C1408C32E148ED7005EF4F6 /* SampleAppChallangeApp.swift in Sources */,
+				4C1408D02E1490D7005EF4F6 /* SectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1408C72E148EDA005EF4F6 /* SampleAppChallangeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1408CB2E148EDC005EF4F6 /* SampleAppChallangeUITests.swift in Sources */,
+				4C1408CC2E148EDC005EF4F6 /* SampleAppChallangeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

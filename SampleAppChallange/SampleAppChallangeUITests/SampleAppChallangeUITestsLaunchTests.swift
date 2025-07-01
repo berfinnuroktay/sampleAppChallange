@@ -1,10 +1,3 @@
-//
-//  SampleAppChallangeUITestsLaunchTests.swift
-//  SampleAppChallangeUITests
-//
-//  Created by berf on 2.07.2025.
-//
-
 import XCTest
 
 final class SampleAppChallangeUITestsLaunchTests: XCTestCase {

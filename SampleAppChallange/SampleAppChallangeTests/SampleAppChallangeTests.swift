@@ -1,10 +1,3 @@
-//
-//  SampleAppChallangeTests.swift
-//  SampleAppChallangeTests
-//
-//  Created by berf on 2.07.2025.
-//
-
 import XCTest
 @testable import SampleAppChallange
 

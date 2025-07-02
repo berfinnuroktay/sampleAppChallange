@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C1408C22E148ED7005EF4F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408BF2E148ED6005EF4F6 /* ContentView.swift */; };
+		4C0932EC2E15BA71008A2AFC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0932EB2E15BA6C008A2AFC /* HomeViewModel.swift */; };
+		4C0932F02E15BB09008A2AFC /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0932EF2E15BB06008A2AFC /* HomeService.swift */; };
+		4C0932F32E15BB44008A2AFC /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0932F22E15BB40008A2AFC /* Dependencies.swift */; };
+		4C0932F52E15BB4E008A2AFC /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0932F42E15BB4E008A2AFC /* DependencyInjection.swift */; };
+		4C1408C22E148ED7005EF4F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408BF2E148ED6005EF4F6 /* HomeView.swift */; };
 		4C1408C32E148ED7005EF4F6 /* SampleAppChallangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408C02E148ED6005EF4F6 /* SampleAppChallangeApp.swift */; };
 		4C1408C42E148ED7005EF4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1408BE2E148ED6005EF4F6 /* Assets.xcassets */; };
 		4C1408C72E148EDA005EF4F6 /* SampleAppChallangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408C52E148EDA005EF4F6 /* SampleAppChallangeTests.swift */; };
@@ -40,11 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0932EB2E15BA6C008A2AFC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4C0932EF2E15BB06008A2AFC /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		4C0932F22E15BB40008A2AFC /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		4C0932F42E15BB4E008A2AFC /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		4C14088D2E148BDE005EF4F6 /* SampleAppChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C14089D2E148BE0005EF4F6 /* SampleAppChallangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppChallangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1408A72E148BE0005EF4F6 /* SampleAppChallangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppChallangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1408BE2E148ED6005EF4F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C1408BF2E148ED6005EF4F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C1408BF2E148ED6005EF4F6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4C1408C02E148ED6005EF4F6 /* SampleAppChallangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppChallangeApp.swift; sourceTree = "<group>"; };
 		4C1408C52E148EDA005EF4F6 /* SampleAppChallangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppChallangeTests.swift; sourceTree = "<group>"; };
 		4C1408C82E148EDC005EF4F6 /* SampleAppChallangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppChallangeUITests.swift; sourceTree = "<group>"; };
@@ -83,6 +91,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C0932ED2E15BA75008A2AFC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4C0932EB2E15BA6C008A2AFC /* HomeViewModel.swift */,
+				4C1408BF2E148ED6005EF4F6 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4C0932EE2E15BAF5008A2AFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C0932EF2E15BB06008A2AFC /* HomeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C0932F12E15BB3B008A2AFC /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				4C0932F42E15BB4E008A2AFC /* DependencyInjection.swift */,
+				4C0932F22E15BB40008A2AFC /* Dependencies.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
 		4C1408842E148BDE005EF4F6 = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +150,12 @@
 		4C1408C12E148ED6005EF4F6 /* SampleAppChallange */ = {
 			isa = PBXGroup;
 			children = (
-				4C1408D32E152E7B005EF4F6 /* Network */,
+				4C0932F12E15BB3B008A2AFC /* Dependency */,
+				4C0932ED2E15BA75008A2AFC /* Home */,
 				4C1408BE2E148ED6005EF4F6 /* Assets.xcassets */,
-				4C1408BF2E148ED6005EF4F6 /* ContentView.swift */,
 				4C1408BD2E148ED6005EF4F6 /* Model */,
+				4C1408D32E152E7B005EF4F6 /* Network */,
+				4C0932EE2E15BAF5008A2AFC /* Services */,
 				4C1408C02E148ED6005EF4F6 /* SampleAppChallangeApp.swift */,
 			);
 			path = SampleAppChallange;
@@ -167,6 +203,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4C0932FB2E15C02E008A2AFC /* PBXTargetDependency */,
 			);
 			name = SampleAppChallange;
 			packageProductDependencies = (
@@ -248,7 +285,7 @@
 			mainGroup = 4C1408842E148BDE005EF4F6;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				4C1408BA2E148C78005EF4F6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				4C0932F72E15BF14008A2AFC /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4C14088E2E148BDE005EF4F6 /* Products */;
@@ -292,13 +329,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0932F32E15BB44008A2AFC /* Dependencies.swift in Sources */,
 				4C1408D72E152F54005EF4F6 /* RequestError.swift in Sources */,
 				4C1408CE2E148F00005EF4F6 /* QuestionModel.swift in Sources */,
 				4C1408D92E153049005EF4F6 /* Network.swift in Sources */,
+				4C0932EC2E15BA71008A2AFC /* HomeViewModel.swift in Sources */,
 				4C1408D52E152E85005EF4F6 /* Request.swift in Sources */,
 				4C1408D22E14911D005EF4F6 /* PageModel.swift in Sources */,
 				4C1408DB2E1533B2005EF4F6 /* ApiService.swift in Sources */,
-				4C1408C22E148ED7005EF4F6 /* ContentView.swift in Sources */,
+				4C1408C22E148ED7005EF4F6 /* HomeView.swift in Sources */,
+				4C0932F02E15BB09008A2AFC /* HomeService.swift in Sources */,
+				4C0932F52E15BB4E008A2AFC /* DependencyInjection.swift in Sources */,
 				4C1408C32E148ED7005EF4F6 /* SampleAppChallangeApp.swift in Sources */,
 				4C1408D02E1490D7005EF4F6 /* SectionModel.swift in Sources */,
 			);
@@ -324,6 +365,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4C0932FB2E15C02E008A2AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4C0932FA2E15C02E008A2AFC /* SwiftLintBuildToolPlugin */;
+		};
 		4C14089F2E148BE0005EF4F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C14088C2E148BDE005EF4F6 /* SampleAppChallange */;
@@ -463,7 +508,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SampleAppChallange/Preview Content\"";
 				DEVELOPMENT_TEAM = 5392CWJ939;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -493,7 +537,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SampleAppChallange/Preview Content\"";
 				DEVELOPMENT_TEAM = 5392CWJ939;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -632,7 +675,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4C1408BA2E148C78005EF4F6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+		4C0932F72E15BF14008A2AFC /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
 			requirement = {
@@ -641,6 +684,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C0932FA2E15C02E008A2AFC /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C0932F72E15BF14008A2AFC /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C1408852E148BDE005EF4F6 /* Project object */;
 }

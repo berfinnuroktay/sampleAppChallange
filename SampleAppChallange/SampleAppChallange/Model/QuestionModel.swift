@@ -1,6 +1,6 @@
 import Foundation
 
-struct QuestionModel: Decodable, Identifiable {
+struct QuestionModel: Codable, Identifiable {
     let type: ItemType
     let imageURL: URL?
     let title: String?

@@ -1,6 +1,6 @@
 import Foundation
 
-struct PageModel: Decodable, Identifiable {
+struct PageModel: Codable, Identifiable {
     let type: ItemType
     let title: String?
     let items: [HierarchyItem]?

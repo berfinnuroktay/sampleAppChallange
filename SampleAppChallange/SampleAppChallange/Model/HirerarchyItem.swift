@@ -1,13 +1,18 @@
 import Foundation
 
-enum ItemType: String, Decodable {
+enum ItemType: String, Codable {
     case page
     case section
     case textQuestion = "text"
     case imageQuestion = "image"
 }
 
-indirect enum HierarchyItem: Decodable, Identifiable {
+indirect enum HierarchyItem: Codable, Identifiable, Equatable {
+
+    static func == (lhs: HierarchyItem, rhs: HierarchyItem) -> Bool {
+        lhs.id == rhs.id
+    }
+    
     case page(PageModel)
     case section(SectionModel)
     case textQuestion(QuestionModel)
@@ -38,6 +43,19 @@ indirect enum HierarchyItem: Decodable, Identifiable {
             self = .textQuestion(try QuestionModel(from: decoder))
         case .imageQuestion:
             self = .imageQuestion(try QuestionModel(from: decoder))
+        }
+    }
+
+    func encode(to encoder: any Encoder) throws {
+        switch self {
+        case .page(let pageModel):
+            try pageModel.encode(to: encoder)
+        case .section(let sectionModel):
+            try sectionModel.encode(to: encoder)
+        case .textQuestion(let questionModel):
+            try questionModel.encode(to: encoder)
+        case .imageQuestion(let questionModel):
+            try questionModel.encode(to: encoder)
         }
     }
 }

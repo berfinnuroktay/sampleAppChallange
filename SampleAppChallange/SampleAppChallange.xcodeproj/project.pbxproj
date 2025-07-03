@@ -25,6 +25,10 @@
 		4C1408D72E152F54005EF4F6 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408D62E152F51005EF4F6 /* RequestError.swift */; };
 		4C1408D92E153049005EF4F6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408D82E153047005EF4F6 /* Network.swift */; };
 		4C1408DB2E1533B2005EF4F6 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1408DA2E1533AF005EF4F6 /* ApiService.swift */; };
+		4C8E63382E1726BE006F84BC /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E63372E1726BB006F84BC /* Cache.swift */; };
+		4C8E633B2E173574006F84BC /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 4C8E633A2E173574006F84BC /* Nuke */; };
+		4C8E633D2E173574006F84BC /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 4C8E633C2E173574006F84BC /* NukeExtensions */; };
+		4C8E633F2E173574006F84BC /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4C8E633E2E173574006F84BC /* NukeUI */; };
 		4CF647CE2E17085E00F58316 /* FullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF647CD2E17084F00F58316 /* FullImageView.swift */; };
 		4CF647D12E17157F00F58316 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF647D02E17157B00F58316 /* PageView.swift */; };
 		4CF647D32E17166600F58316 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF647D22E17165E00F58316 /* Constants.swift */; };
@@ -73,6 +77,7 @@
 		4C1408D62E152F51005EF4F6 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		4C1408D82E153047005EF4F6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		4C1408DA2E1533AF005EF4F6 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		4C8E63372E1726BB006F84BC /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		4CF647CD2E17084F00F58316 /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
 		4CF647D02E17157B00F58316 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		4CF647D22E17165E00F58316 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -87,6 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8E633F2E173574006F84BC /* NukeUI in Frameworks */,
+				4C8E633B2E173574006F84BC /* Nuke in Frameworks */,
+				4C8E633D2E173574006F84BC /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1408DA2E1533AF005EF4F6 /* ApiService.swift */,
+				4C8E63372E1726BB006F84BC /* Cache.swift */,
 				4C1408D82E153047005EF4F6 /* Network.swift */,
 				4C1408D42E152E83005EF4F6 /* Request.swift */,
 				4C1408D62E152F51005EF4F6 /* RequestError.swift */,
@@ -239,6 +248,9 @@
 			);
 			name = SampleAppChallange;
 			packageProductDependencies = (
+				4C8E633A2E173574006F84BC /* Nuke */,
+				4C8E633C2E173574006F84BC /* NukeExtensions */,
+				4C8E633E2E173574006F84BC /* NukeUI */,
 			);
 			productName = SampleAppChallange;
 			productReference = 4C14088D2E148BDE005EF4F6 /* SampleAppChallange.app */;
@@ -318,6 +330,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				4C0932F72E15BF14008A2AFC /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				4C8E63392E173574006F84BC /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4C14088E2E148BDE005EF4F6 /* Products */;
@@ -365,6 +378,7 @@
 				4CF647D92E17197600F58316 /* TextQuestionView.swift in Sources */,
 				4CF647CE2E17085E00F58316 /* FullImageView.swift in Sources */,
 				4CF647D12E17157F00F58316 /* PageView.swift in Sources */,
+				4C8E63382E1726BE006F84BC /* Cache.swift in Sources */,
 				4C0932F32E15BB44008A2AFC /* Dependencies.swift in Sources */,
 				4CF647D72E17180E00F58316 /* SectionView.swift in Sources */,
 				4C1408D72E152F54005EF4F6 /* RequestError.swift in Sources */,
@@ -723,6 +737,14 @@
 				minimumVersion = 0.59.1;
 			};
 		};
+		4C8E63392E173574006F84BC /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -730,6 +752,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4C0932F72E15BF14008A2AFC /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		4C8E633A2E173574006F84BC /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C8E63392E173574006F84BC /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		4C8E633C2E173574006F84BC /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C8E63392E173574006F84BC /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		4C8E633E2E173574006F84BC /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C8E63392E173574006F84BC /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

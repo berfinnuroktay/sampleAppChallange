@@ -1,6 +1,6 @@
 import Foundation
 
-struct SectionModel: Decodable, Identifiable {
+struct SectionModel: Codable, Identifiable {
     let type: ItemType
     let title: String?
     let items: [HierarchyItem]?

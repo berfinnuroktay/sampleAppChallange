@@ -3,6 +3,8 @@ import NukeUI
 
 // Detail image view for full-screen
 struct FullImageView: View, Identifiable {
+    @Environment(\.dismiss) private var dismiss
+
     let title: String?
     let url: URL?
     var id: String { url?.absoluteString ?? UUID().uuidString }
@@ -26,7 +28,21 @@ struct FullImageView: View, Identifiable {
             }
             .padding()
         }
-        .padding()
+        .overlay(alignment: .topLeading) {
+            closeButton
+        }
+        .padding(16)
+    }
+
+    @ViewBuilder
+    private var closeButton: some View {
+        Button {
+            dismiss()
+        } label: {
+            Image(systemName: "xmark.circle.fill")
+                .font(.system(size: 28))
+                .foregroundColor(.secondary)
+        }
     }
 }
 

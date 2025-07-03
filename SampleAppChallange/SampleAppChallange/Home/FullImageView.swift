@@ -1,4 +1,5 @@
 import SwiftUI
+import NukeUI
 
 // Detail image view for full-screen
 struct FullImageView: View, Identifiable {
@@ -8,22 +9,22 @@ struct FullImageView: View, Identifiable {
 
     var body: some View {
         VStack {
-            if let title {
-                Text(title)
-                    .font(.title2.bold())
-                    .padding(.bottom, 12)
-            }
-            if let url {
-                AsyncImage(url: url) { image in
+            Text(title ?? Constants.untitledItem)
+                .font(.title2.bold())
+                .padding(.bottom, 12)
+
+            LazyImage(url: url) { state in
+                if let image = state.image {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                } placeholder: {
+                } else if state.error != nil {
+                    Text(state.error?.localizedDescription ?? "Something went wrong")
+                } else {
                     ProgressView()
                 }
-            } else {
-                Text("Image not available")
             }
+            .padding()
         }
         .padding()
     }

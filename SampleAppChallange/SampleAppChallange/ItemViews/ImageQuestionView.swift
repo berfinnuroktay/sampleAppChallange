@@ -1,4 +1,5 @@
 import SwiftUI
+import NukeUI
 
 struct ImageQuestionView: View {
     let question: QuestionModel
@@ -36,14 +37,13 @@ struct ImageQuestionView: View {
 
     @ViewBuilder
     private var imageView: some View {
-        AsyncImage(url: question.imageURL) { state in
-            switch state {
-            case .success(let image):
+        LazyImage(url: question.imageURL) { state in
+            if let image = state.image {
                 image.resizable()
-            case .failure:
-                Color.red
-            default:
-                Color.gray.opacity(0.3)
+            } else if state.error != nil {
+                Text(state.error?.localizedDescription ?? "Something went wrong")
+            } else {
+                ProgressView()
             }
         }
         .frame(width: 150, height: 150)

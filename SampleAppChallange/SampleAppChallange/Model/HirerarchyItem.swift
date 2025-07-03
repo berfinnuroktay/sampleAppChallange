@@ -12,7 +12,7 @@ indirect enum HierarchyItem: Codable, Identifiable, Equatable {
     static func == (lhs: HierarchyItem, rhs: HierarchyItem) -> Bool {
         lhs.id == rhs.id
     }
-    
+
     case page(PageModel)
     case section(SectionModel)
     case textQuestion(QuestionModel)

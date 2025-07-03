@@ -23,16 +23,26 @@ struct HomeView: View {
                 ProgressView()
             }
         }
-        .sheet(item: $selectedImage, content: { tuple in
-            FullImageView(title: tuple.title, url: tuple.url)
-        })
+        .sheet(
+            item: $selectedImage,
+            content: { tuple in
+                FullImageView(title: tuple.title, url: tuple.url)
+            }
+        )
         .onAppear {
             Task {
                 await viewModel.fetch()
             }
         }
+        .alert("Error", isPresented: Binding(
+            get: { viewModel.error != nil },
+            set: { _ in viewModel.dismissError() }
+        ), actions: {
+            Button("OK", role: .cancel) { viewModel.dismissError() }
+        }, message: {
+            Text(viewModel.error ?? "Unknown error")
+        })
     }
-
 }
 
 #Preview {

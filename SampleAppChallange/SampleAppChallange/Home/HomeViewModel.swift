@@ -4,6 +4,7 @@ import Foundation
 final class HomeViewModel: ObservableObject {
 
     @Published var homeModel: HierarchyItem?
+    @Published var error: String?
 
     private let homeService = HomeService()
 
@@ -12,11 +13,13 @@ final class HomeViewModel: ObservableObject {
             switch await homeService.fetch() {
             case .success(let result):
                 homeModel = result
-                print("=== success: \(result)")
             case .failure(let error):
-                // TODO: show dialog here
-                print("=== error: \(error)")
+                self.error = error.localizedDescription
             }
         }
+    }
+
+    func dismissError() {
+        error = nil
     }
 }

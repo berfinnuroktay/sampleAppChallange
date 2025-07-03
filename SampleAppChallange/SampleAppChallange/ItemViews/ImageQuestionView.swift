@@ -11,7 +11,7 @@ struct ImageQuestionView: View {
     }
 
     private var fontSize: CGFloat {
-        Constants.initialSubFontSize - level
+        Constants.initialSubFontSize - (level * Constants.reduceFontMultiplier)
     }
 
     init(_ question: QuestionModel, _ level: CGFloat, onImageTap: @escaping (SelectedImage) -> Void) {
@@ -21,9 +21,9 @@ struct ImageQuestionView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .leading, spacing: 12) {
             Text(question.title ?? Constants.untitledItem)
-                .font(.system(size: Constants.initialSubFontSize - level))
+                .font(.system(size: fontSize))
                 .padding(.leading, indent)
 
             Button {

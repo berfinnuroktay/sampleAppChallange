@@ -32,6 +32,8 @@ struct FullImageView: View, Identifiable {
             closeButton
         }
         .padding(16)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(.lightGray).ignoresSafeArea())
     }
 
     @ViewBuilder

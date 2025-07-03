@@ -16,7 +16,7 @@ struct PageView: View {
     }
 
     var body: some View {
-        LazyVStack(alignment: .leading, spacing: 16) {
+        LazyVStack(alignment: .leading, spacing: 8) {
             Text(page.title ?? Constants.untitledItem)
                 .font(.system(size: Constants.pageFontSize, weight: .bold))
                 .padding(.leading, indent)

@@ -5,11 +5,11 @@ struct TextQuestionView: View {
     let level: CGFloat
 
     private var indent: CGFloat {
-        Constants.indentationAmount * CGFloat(level)
+        Constants.indentationAmount * level
     }
 
     private var fontSize: CGFloat {
-        Constants.initialSubFontSize - CGFloat(level)
+        Constants.initialSubFontSize - (level * Constants.reduceFontMultiplier)
     }
 
     init(_ question: QuestionModel, _ level: CGFloat) {

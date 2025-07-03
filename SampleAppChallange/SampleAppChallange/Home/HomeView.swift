@@ -17,6 +17,7 @@ struct HomeView: View {
                         }
                     )
                 }
+                .scrollIndicators(.hidden)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(16)
             } else {

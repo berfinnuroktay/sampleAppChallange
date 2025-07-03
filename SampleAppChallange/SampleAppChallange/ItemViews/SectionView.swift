@@ -10,7 +10,7 @@ struct SectionView: View {
     }
 
     private var fontSize: CGFloat {
-        Constants.initialSubFontSize - level
+        Constants.initialSubFontSize - (level * Constants.reduceFontMultiplier)
     }
 
     init(_ section: SectionModel, _ level: CGFloat, onImageTap: @escaping (SelectedImage) -> Void) {
@@ -20,7 +20,7 @@ struct SectionView: View {
     }
 
     var body: some View {
-        LazyVStack(alignment: .leading, spacing: 12) {
+        LazyVStack(alignment: .leading, spacing: 8) {
             Text(section.title ?? Constants.untitledItem)
                 .font(.system(size: fontSize, weight: .semibold))
                 .padding(.leading, indent)

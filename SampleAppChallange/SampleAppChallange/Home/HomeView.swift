@@ -1,22 +1,38 @@
 import SwiftUI
 
 struct HomeView: View {
-
     @StateObject var viewModel = HomeViewModel()
+    @State private var selectedImage: SelectedImage?
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color(.lightGray).ignoresSafeArea()
+
+            if let pageItem = viewModel.homeModel {
+                ScrollView {
+                    HierarchyNodeView(
+                        pageItem, 0,
+                        onImageTap: {
+                            selectedImage = $0
+                        }
+                    )
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(16)
+            } else {
+                ProgressView()
+            }
         }
-        .padding()
+        .sheet(item: $selectedImage, content: { tuple in
+            FullImageView(title: tuple.title, url: tuple.url)
+        })
         .onAppear {
             Task {
-                viewModel.fetch()
+                await viewModel.fetch()
             }
         }
     }
+
 }
 
 #Preview {

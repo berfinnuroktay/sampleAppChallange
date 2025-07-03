@@ -1,7 +1,12 @@
 import Foundation
 
-struct SectionModel: Decodable {
+struct SectionModel: Decodable, Identifiable {
     let type: ItemType
     let title: String?
-    let items: [QuestionModel]?
+    let items: [HierarchyItem]?
+    var id = UUID()
+
+    enum CodingKeys: String, CodingKey {
+        case type, title, items
+    }
 }

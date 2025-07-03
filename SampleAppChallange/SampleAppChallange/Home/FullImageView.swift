@@ -43,7 +43,7 @@ struct FullImageView: View, Identifiable {
         } label: {
             Image(systemName: "xmark.circle.fill")
                 .font(.system(size: 28))
-                .foregroundColor(.secondary)
+                .foregroundColor(Color(.darkGray))
         }
     }
 }

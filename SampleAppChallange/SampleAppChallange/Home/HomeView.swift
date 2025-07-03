@@ -24,10 +24,12 @@ struct HomeView: View {
                 ProgressView()
             }
         }
+        .foregroundStyle(.black)
         .sheet(
             item: $selectedImage,
             content: { tuple in
                 FullImageView(title: tuple.title, url: tuple.url)
+                    .foregroundStyle(.black)
             }
         )
         .onAppear {
